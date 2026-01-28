@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cars | Duo Drive Kenya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">DuoDrive<span>KE</span></div>
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="cars.html">Cars</a>
+    <a href="contact.html" class="contact-link">Contact</a>
+  </nav>
+  <div class="menu-btn" id="menuBtn">
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+
+<section class="cars">
+  <h1 class="section-title reveal">Available Cars</h1>
+  <p class="reveal" style="text-align: center; margin-bottom: 2rem; color: #666;">
+    Browse our selection of quality inspected vehicles
+  </p>
+  
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Search by model, brand, year, or features..." />
+    <i class="fas fa-search search-icon"></i>
+  </div>
+  
+  <div class="cars-container" id="carList">
+    <!-- Loading fallback content -->
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Toyota Axio</h3>
+        <p class="price">Ksh 950,000</p>
+        <p class="details">2018 • Automatic • Petrol</p>
+        <button class="btn inquire-btn" data-car="Toyota Axio" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+    
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1566472241221-2fde4e4f4b8b?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Mazda Demio</h3>
+        <p class="price">Ksh 780,000</p>
+        <p class="details">2017 • Automatic • Hybrid</p>
+        <button class="btn inquire-btn" data-car="Mazda Demio" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+    
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Subaru Forester</h3>
+        <p class="price">Ksh 1,450,000</p>
+        <p class="details">2019 • AWD • Turbo</p>
+        <button class="btn inquire-btn" data-car="Subaru Forester" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+    
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Nissan Note</h3>
+        <p class="price">Ksh 820,000</p>
+        <p class="details">2016 • Manual • Petrol</p>
+        <button class="btn inquire-btn" data-car="Nissan Note" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+    
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Toyota Premio</h3>
+        <p class="price">Ksh 1,200,000</p>
+        <p class="details">2019 • Automatic • Petrol</p>
+        <button class="btn inquire-btn" data-car="Toyota Premio" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+    
+    <div class="car-card reveal">
+      <div class="car-image" style="background-image: url('https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=600')"></div>
+      <div class="car-info">
+        <h3>Honda Fit</h3>
+        <p class="price">Ksh 850,000</p>
+        <p class="details">2017 • Automatic • Petrol</p>
+        <button class="btn inquire-btn" data-car="Honda Fit" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; margin-top: 0.5rem; width: 100%;">Inquire Now</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="filters reveal" style="margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 15px; text-align: center;">
+    <h3>Can't find what you're looking for?</h3>
+    <p style="margin: 1rem 0;">Contact us directly and we'll help you find your dream car!</p>
+    <a href="https://wa.me/254706193959" class="btn" target="_blank" style="display: inline-flex; align-items: center; gap: 10px;">
+      <i class="fab fa-whatsapp"></i> Contact on WhatsApp
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>DuoDrive<span>KE</span></h3>
+      <p>Your trusted partner for quality vehicles in Kenya since 2015.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="cars.html">Available Cars</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p><i class="fas fa-phone"></i> +254 706 193 959</p>
+      <p><i class="fas fa-envelope"></i> info@duodrive.co.ke</p>
+      <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="currentYear">2026</span> Duo Drive Kenya. All rights reserved.</p>
+    <p class="credit">Made with <i class="fas fa-heart"></i> by Dw33pY</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/254706193959" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-text">Chat with us</span>
+</a>
+
+</body>
+        </html>
